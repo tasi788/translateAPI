@@ -12,6 +12,7 @@ uvicorn = "*"
 aiofiles = "*"
 bing-tr-free = "*"
 pydeepl = "*"
+bingtrans = {git = "https://github.com/bahn/bingtrans.git"}
 
 [requires]
 python_version = "3.7"

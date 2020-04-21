@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d38419621c98d23bc43691860192737cc8926ac92a42149f0e31037b97677379"
+            "sha256": "632565fdb6255d4885a052456ee47a7f748462592e56c1637d1124078a4cf867"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,10 @@
             ],
             "index": "pypi",
             "version": "==0.0.4"
+        },
+        "bingtrans": {
+            "git": "https://github.com/bahn/bingtrans.git",
+            "ref": "67b49f2902bb00a92a24681b8bc786daf26e19a7"
         },
         "certifi": {
             "hashes": [
