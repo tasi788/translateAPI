@@ -10,7 +10,7 @@ var vm = new Vue({
   },
   methods: {
     async query() {
-      this.resp = (await axios.post('http://localhost:8000/', {
+      this.resp = (await axios.post('/', {
         InputText: this.input
       })).data
     }
