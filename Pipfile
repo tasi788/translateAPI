@@ -8,6 +8,10 @@ verify_ssl = true
 [packages]
 fastapi = "*"
 translators = "*"
+uvicorn = "*"
+aiofiles = "*"
+bing-tr-free = "*"
+pydeepl = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>翻譯好朋友</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css'>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="ts fluid slate"><span class="header">神奇翻譯好朋友</span>
+    <!--span.description 這個板岩沒有圓角，適合貼齊左右邊。-->
+  </div>
+  <div class="ts container" id="app"><br />
+    <div class="ts fluid action input">
+      <input v-model="input" type="text" placeholder="尼想翻啥">
+      <button class="ts button" @click="query">發射</button>
+    </div>
+    <div class="ts divider"></div>
+    <div class="ts relaxed list">
+      <div class="item" v-for="{result,provider,status} in resp" :key="provider">
+        <div class="header"> {{provider}} </div>
+        {{result, status}}
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
