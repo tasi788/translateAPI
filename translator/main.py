@@ -18,12 +18,12 @@ def ping():
 
 @app.get('/', response_class=HTMLResponse)
 def home():
-    return open('./webpage/index.html', 'r').read()
+    return open('./webpage/index.html', 'r', encoding='utf8').read()
 
 
 @app.get('/script.js', response_class=HTMLResponse)
 def jsfile():
-    return open('./webpage/script.js', 'r').read()
+    return open('./webpage/script.js', 'r', encoding='utf8').read()
 
 
 @app.post('/')
