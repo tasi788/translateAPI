@@ -23,8 +23,10 @@
     <div class="ts divider"></div>
     <div class="ts relaxed list">
       <div class="item" v-for="{result,provider,status} in resp" :key="provider">
-        <div class="header"> {{provider}} </div>
-        {{result, status}}
+        <div class="ts huge header">
+        {{provider}}</div>
+        <h1 class="ts sub header">{{result, status}}</h1>
+        
       </div>
     </div>
   </div>
