@@ -3,7 +3,7 @@ var vm = new Vue({
   data: {
     input: "",
     resp: [{
-      "provider": "google",
+      "provider": "Google",
       "status": true,
       "result": "文字"
     }]
